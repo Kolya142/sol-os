@@ -5,7 +5,7 @@ while True:
     print("                ")
     print("(1)calc, (2)game2d", end="\r")
     from os import system, get_terminal_size
-    clear = lambda : system("cls | clear")
+    clear = lambda : system("clear")
     i = input()
     clear()
     if i == "1":
@@ -31,6 +31,7 @@ while True:
     elif i == "2":
         n = 0
         cols, rown = get_terminal_size()
+        rown -= 1
         while True:
             clear()
             o = ""
