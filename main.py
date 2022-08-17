@@ -2,8 +2,7 @@ print("booting 'sol-os'", end="\r")
 import time as t
 t.sleep(1)
 while True:
-    print("                ")
-    print("(1)calc, (2)game2d", end="\r")
+    print("(1)calc, (2)game2d, (3)operators")
     from os import system, get_terminal_size
     clear = lambda : system("clear")
     i = input()
@@ -53,3 +52,20 @@ while True:
             else:
                 clear()
                 break
+    elif i == "3":
+        print("(0)not, (1)and (2)or")
+        i = input()
+        clear()
+        o = None
+        if i == "0":
+            n = int(input("byte(0,1):"))
+            o = not n
+        elif i == "1":
+            n1 = int(input("byte1(0,1):"))
+            n2 = int(input("byte2(0,1):"))
+            o = n1 and n2
+        elif i == "2":
+            n1 = int(input("byte1(0,1):"))
+            n2 = int(input("byte2(0,1):"))
+            o = n1 or n2       
+        print(o)               
