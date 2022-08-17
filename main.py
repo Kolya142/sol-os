@@ -8,7 +8,7 @@ while True:
     clear = lambda : system("cls | clear")
     i = input()
     clear()
-    if i == "1"
+    if i == "1":
         n1 = int(input("n1:"))
         n2 = int(input("n2:"))
         w = input("?")
