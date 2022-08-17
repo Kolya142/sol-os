@@ -1,7 +1,7 @@
 print("booting 'sol-os'", end="\r")
 import time as t
 t.sleep(1)
-while True
+while True:
     print("                ")
     print("(1)calc, (2)game2d", end="\r")
     from os import system, get_terminal_size
