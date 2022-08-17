@@ -2,7 +2,7 @@ print("booting 'sol-os'", end="\r")
 import time as t
 t.sleep(1)
 while True:
-    print("(1)calc, (2)game2d, (3)operators")
+    print("(1)calc, (2)game2d, (3)operators, (4)github")
     from os import system, get_terminal_size
     clear = lambda : system("clear")
     i = input()
@@ -68,4 +68,8 @@ while True:
             n1 = int(input("byte1(0,1):"))
             n2 = int(input("byte2(0,1):"))
             o = n1 or n2       
-        print(o)               
+        print(o)    
+        t.sleep(1)           
+    elif i == "4":
+        print("https://github.com/Kolya142/sol-os")
+        t.sleep(1)
