@@ -27,6 +27,7 @@ while True:
         elif w == "**":
             out = n1 ** n2
         print(out, end="\r")
+        t.sleep(1)
     elif i == "2":
         n = 0
         cols, rown = get_terminal_size()
@@ -38,6 +39,7 @@ while True:
                     o += "p"
                 else:
                     o += "."
+            print(o)
             i = input(":")
             if i == "w":
                 n -= cols
