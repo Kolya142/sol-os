@@ -51,4 +51,5 @@ while True:
             elif i == "d":
                 n += 1
             else:
+                clear()
                 break
