@@ -2,7 +2,7 @@ print("booting 'sol-os'", end="\r")
 import time as t
 t.sleep(1)
 while True:
-    print("(1)calc, (2)game2d, (3)operators, (4)github, (5)exit")
+    print("(1)calc, (2)game2d, (3)operators, (4)github (5)clicker for repl.it, (6)exit")
     from os import system, get_terminal_size
     clear = lambda : system("clear")
     i = input()
@@ -74,4 +74,6 @@ while True:
         print("https://github.com/Kolya142/sol-os")
         t.sleep(1)
     elif i == "5":
+        os.system("python3 clicker.py")
+    elif i == "6":
         break
